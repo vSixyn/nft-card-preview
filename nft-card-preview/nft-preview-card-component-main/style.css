@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@220;300;400;500;550;600&display=swap');
+
+:root{
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --line: hsl(215, 32%, 27%);
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    background-color: var(--main-bg);
+}
+.card-holder {/* centers the card on the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+.card {/*basic card styling*/
+    background-color: var(--card-bg);
+    border-radius: 25px;
+    width: 350px;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 85%;
+
+}
+.nft-image {/* styling for image of nft */
+    object-fit: contain;
+    width: 100%;
+    border-radius: 10px;
+}
+.nft-name {/* styling for name*/
+    font-family: 'outfit', sans-serif;
+    color: white;
+    font-weight: 600;
+    font-size: 1.8em;
+    text-decoration: none;
+}
+.nft-name:hover{
+    color: var(--cyan);
+    text-decoration: none;
+}
+.desc {/* styling for description*/
+    color: var(--soft-blue);
+    font-family: 'outfit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    width: 95%;
+}
+.price {/* styling for price*/
+    color: var(--cyan);
+    font-family: 'outfit', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    top: -42.5px;
+    left: 20px;
+}
+.time {
+    text-align: right;
+    color: var(--soft-blue);
+    font-family: 'outfit', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+    top: -136px;
+}
+.clock {
+    position: relative;
+    top: -80px;
+    left: 68%;
+}
+hr {
+    background-color: var(--line);
+    border: none;
+    height: 2px;
+    position: relative;
+    top: -125px;
+}
+.card-footer {
+    display:     flex;
+    align-items: center;
+    position: relative;
+    top: -120px;
+    height: 10%;
+}
+.creator {
+    color: var(--soft-blue);
+    font-family: 'outfit', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding-left: 10px;
+}
+.creator a {
+    color: white;
+    font-family: 'outfit', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-decoration: none;
+}
+.footer-img{
+    object-fit: contain;
+    width: 15%;
+}
+.creator a:hover {
+    color: var(--cyan);
+    text-decoration: none;
+}
